@@ -1,24 +1,17 @@
-# README
+# Ideaboard Rails API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+* git clone `git@github.com:EvanBrightside/Ideaboard-Rails-API.git`
+* bundle install
+* rails db:setup
+* rails db:migrate
+* rails db:seed
+* rails s
 
-Things you may want to cover:
+## Tech
+* Ruby on Rails 5.2
+* Ruby 2.5
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Usage
+* rails s -p 3001
+* curl -G `http://localhost:3001/api/v1/ideas`
